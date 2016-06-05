@@ -1,0 +1,229 @@
+/*
+ * In this file, you may style your site using CSS or LESS as well as overwrite UIkit LESS variables.
+ * Make sure to enable development mode via the Admin->Appearance->Settings option while working on your website. LESS will then be processed on the fly.
+ */
+
+/* Font
+ ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|Lato);
+ 
+// Variables modifiers
+
+@navbar-nav-padding-horizontal:                 10px;
+@navbar-nav-color:                              @text-contrast-color;
+@navbar-nav-font-weight:                        300;
+@navbar-nav-hover-background:                   transparent;
+@navbar-nav-hover-color:                        @text-contrast-color;
+@navbar-nav-onclick-background:                 transparent;
+@navbar-nav-onclick-color:                      @global-link-hover-color;
+@navbar-nav-active-background:                  transparent;
+@navbar-nav-active-color:                       @text-contrast-color;
+@navbar-nav-font-size:                          14px;
+@navbar-nav-font-weight:                        normal;
+@dropdown-navbar-background:                    #fff;
+
+/* Navbar modification
+ ========================================================================== */
+
+.hook-navbar-nav() {
+  text-transform: uppercase;
+  font-family: 'Lato', serif;
+}
+
+/* Adjust the menu position */
+nav.tm-primary-menu {
+  position: relative;
+  top: 10px;
+}
+
+/* Add dropdown icon */
+.uk-navbar-nav > li[data-uk-dropdown] > a i {
+  position: absolute;
+  left: 45%;
+  margin-left: -5px;
+  top: 27px;
+}
+
+/* Nav dropdown modification
+ ========================================================================== */
+
+.uk-dropdown-navbar {
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+
+/* Dropdown modification
+ ========================================================================== */
+
+.hook-dropdown() {
+    border-radius: @global-border-radius;
+}
+
+.hook-dropdown-navbar {
+	border-bottom: 1px solid @global-primary-background;
+	background-color: #fff;
+
+	.uk-nav {
+		margin-top: -@dropdown-padding;
+		margin-bottom: -@dropdown-padding;
+	}
+
+	.uk-nav a {
+		color: @global-link-color;
+		font-family: 'Lato', sans-serif;
+		padding-top: 9px;
+		padding-bottom: 9px;
+
+		&:hover,
+		&:active {
+			color: @text-contrast-color;
+			background-color: @global-primary-background;
+		}
+
+	}
+
+}
+ 
+/* Header Bar modification
+ ========================================================================== */
+
+.tm-header-bar {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #216694;
+    color: @text-contrast-color;
+	font-family: 'Lato', sans-serif;
+	line-height: @text-small-line-height;
+}
+
+.tm-header-bar a {
+	color: @text-contrast-color;
+	font-family: 'Lato', sans-serif;
+	// font-size: @text-small-font-size;
+	line-height: @text-small-line-height;
+	padding-left: 10%;
+	// padding-right: 10%;
+	margin-right: 10px;
+	margin-left: 10px;
+	
+	&:hover,
+	&:active {
+		color: @text-contrast-color;
+		text-decoration: none;
+	}
+}
+
+/* Header modification
+ ========================================================================== */
+
+.tm-header {
+    color: @text-contrast-color;
+    margin-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    // border-bottom: 2px solid @global-primary-background;
+    border-bottom: none;
+    background-color: @global-primary-background;
+}
+
+.tm-header.uk-active {
+    color: @text-contrast-color;
+    // margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    // border-bottom: 2px solid @global-primary-background;
+    background-color: @global-primary-background;
+}
+
+.tm-content {
+    border-bottom: 2px solid @global-primary-background;
+}
+
+/* Footer Bar modification
+ ========================================================================== */
+
+.tm-footer-bar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: @text-muted;
+	font-family: 'Lato', sans-serif;
+	background-color: #ECF0F1;
+	// font-size: @text-small-font-size;
+	// line-height: @text-small-line-height;
+	// text-transform: uppercase;
+}
+
+.tm-footer-bar a {
+	color: @global-link-color;
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	// font-size: @text-small-font-size;
+	// line-height: @text-small-line-height;
+	// padding-left: 10%;
+	// padding-right: 10%;
+	margin-right: 10px;
+	margin-left: 10px;
+	
+	&:hover,
+	&:active {
+		color: @global-link-hover-color;
+		text-decoration: none;
+	}
+}
+
+.tm-footer {
+    border-top: 1px solid @global-border;
+}
+
+/* Article Header modification
+ ========================================================================== */
+
+.uk-article-title {
+    text-transform: uppercase;
+    border-left: 2px solid @global-primary-background;
+	font-family: 'Lato', sans-serif;
+}
+
+.h2 {
+    border-right: 2px solid @global-primary-background;
+	font-family: 'Lato', sans-serif;
+}
+
+.tm-article-image {
+    border-bottom: 2px solid @global-primary-background;
+}
+
+.tm-main {
+    background-color: #ECF0F1;
+}
+
+.tm-main {
+    background-color: #ECF0F1;
+}
+
+.tm-content {
+    background-color: #ECF0F1;
+}
+
+.tm-cta-bar {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: @global-primary-background;
+    color: @text-contrast-color;
+	font-family: 'Lato', sans-serif;
+	// font-size: @text-small-font-size;
+	// line-height: @text-small-line-height;
+	// text-transform: uppercase;
+}
+
+.widget_quotescollection .widget-title {
+    display: none;
+}
+
+// .uk-offcanvas-page {
+//     margin-left: 0 !important; /* Important is necessary since it overwrites CSS added via JS */
+// }

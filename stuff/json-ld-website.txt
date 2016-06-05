@@ -1,0 +1,36 @@
+</script><script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type" : "WebSite",
+       	"name" : "Medische Keuringen - snel en flexibel",
+       	"alternateName" : "De specialist voor medische keuringen - en meer",
+       	"description": "Medische Keuringen, PMO, Vaccinaties en Arbodienstverlening. Snel en flexibel. Bij U in de buurt, of op locatie!",
+       	"url" : "https://www.medischekeuringen.net/",
+       	"image": "https://www.medischekeuringen.net/wp-content/uploads/medische-keuringen-en-meer.jpg",
+		"potentialAction" : {
+    			"@type" : "SearchAction",
+    			"target" : "http://www.medischekeuringen.net/?s={search_term_string}",
+    			"query-input" : "required name=search_term_string"
+  		}
+}
+</script>
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type" : "WebSite",
+       	"name" : "Medische Keuringen - snel en flexibel",
+       	"alternateName" : "De specialist voor medische keuringen - en meer",
+       	"description": "Medische Keuringen, PMO, Vaccinaties en Arbodienstverlening. Snel en flexibel. Bij U in de buurt, of op locatie!",
+       	"url" : "https://www.medischekeuringen.net/",
+       	"image": "https://www.medischekeuringen.net/wp-content/uploads/medische-keuringen-en-meer.jpg",
+		"potentialAction" : [{
+    			"@type" : "SearchAction",
+    			"target" : "http://www.medischekeuringen.net/?s={search_term_string}",
+    			"query-input" : "required name=search_term_string"
+  		},{
+    			"@type": "SearchAction",
+    			"target": "android-app://com.example/https/query.medischekeuringen.net/search/?q={search_term_string}",
+    			"query-input": "required name=search_term_string"
+  }]
+}
+</script>

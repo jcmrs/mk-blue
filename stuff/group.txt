@@ -1,0 +1,127 @@
+<?php
+/* Template name: Group */
+
+// Load necessary UIkit components.
+add_action( 'beans_uikit_enqueue_scripts', 'group_view_enqueue_uikit_assets' );
+
+function group_view_enqueue_uikit_assets() {
+
+	beans_uikit_enqueue_components( array( 'flex', 'animation', 'contrast', 'overlay', 'thumbnail', 'modal', 'scrollspy', 'smooth-scroll', 'tab' ), 'core' );
+	beans_uikit_enqueue_components( array( 'lightbox', 'slider', 'slideshow', 'accordion', 'slideshow-fx', 'sticky', 'tooltip', 'progress', 'modal', 'offcanvas' ), 'add-ons' );
+
+}
+
+// Force template layout
+// add_filter( 'beans_layout', 'beans_child_view_force_layout' );
+// function beans_child_view_force_layout() {
+//     return 'c_ps';
+// }
+
+////////
+
+// Service Keuring Bar.
+add_action( 'beans_footer_before_markup', 'mk_service_keuring_bar' );
+
+function mk_service_keuring_bar() {
+
+	?>
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom uk-vertical-align">
+    	<div class="uk-grid uk-vertical-align-middle" data-uk-grid-margin>
+    
+            <div class="uk-width-medium-1-2">
+                <img width="660" height="400" src="https://mk-blue-jcmrs.c9users.io/wp-content/uploads/medische-keuring.jpg" alt="">
+            </div>
+    
+            <div class="uk-width-medium-1-2">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h2>Subheading</h2>
+                <p>Qquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="uk-button uk-button-primary" href="#">Button</a>
+            </div>
+    
+        </div>
+        
+        <hr class="uk-grid-divider">
+            </div>
+    <?php
+
+}
+
+// Service PMO Bar.
+add_action( 'beans_footer_before_markup', 'mk_service_pmo_bar' );
+
+function mk_service_pmo_bar() {
+
+	?>
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+        
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-2">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h2>Subheading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="uk-button uk-button-primary" href="#">Button</a>
+            </div>
+    
+            <div class="uk-width-medium-1-2">
+                <img width="660" height="400" src="https://mk-blue-jcmrs.c9users.io/wp-content/uploads/pmo.jpg" alt="">
+            </div>
+        </div>
+    
+        <hr class="uk-grid-divider">
+    </div>
+    <?php
+
+}
+
+// Service CTA Bar.
+add_action( 'beans_footer_before_markup', 'mk_service_cta_bar' );
+
+function mk_service_cta_bar() {
+
+	?>
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-1">
+                <div class="uk-panel uk-panel-box uk-text-center">
+                    <p><strong>Phasellus viverra nulla ut metus.</strong> Quisque rutrum etiam ultricies nisi vel augue. <a class="uk-button uk-button-primary uk-margin-left" href="#">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+
+}
+
+// Splash CTA area.
+add_action( 'beans_footer_before_markup', 'mk_splash_cta_bar' );
+
+function mk_splash_cta_bar() {
+
+	?>
+	<div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+
+            <div class="uk-vertical-align uk-text-center" style="background: url('https://mk-blue-jcmrs.c9users.io/wp-content/uploads/vestigingen.jpg') 50% 0 no-repeat; height: 450px;">
+                <div class="uk-vertical-align-middle uk-width-1-2">
+                    <h3>Sample Heading</h3>
+                    <p class="uk-text-large">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <p>
+                        <a class="uk-button uk-button-primary uk-button-large" href="#">Button</a>
+                        <a class="uk-button uk-button-large" href="#">Button</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+	<?php
+
+}
+
+////////
+
+// Load document which is always needed at the bottom of template files.
+beans_load_document();

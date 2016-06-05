@@ -1,0 +1,52 @@
+<?php
+/* Template name: Group */
+
+// Load necessary UIkit components.
+add_action( 'beans_uikit_enqueue_scripts', 'group_view_enqueue_uikit_assets' );
+
+function group_view_enqueue_uikit_assets() {
+
+	beans_uikit_enqueue_components( array( 'flex', 'animation', 'contrast', 'overlay', 'thumbnail', 'modal', 'scrollspy', 'smooth-scroll', 'tab' ), 'core' );
+	beans_uikit_enqueue_components( array( 'lightbox', 'slider', 'slideshow', 'accordion', 'slideshow-fx', 'sticky', 'tooltip', 'progress', 'modal', 'offcanvas' ), 'add-ons' );
+
+}
+
+////////
+
+beans_add_attribute( 'beans_main', 'class', 'uk-padding-top-remove' );
+
+beans_remove_action( 'beans_breadcrumb' );
+
+beans_remove_action( 'beans_post_title' );
+
+// Add Test Bar.
+add_action( 'beans_post_header_prepend_markup', 'group_content_bar' );
+
+function group_content_bar() {
+
+	?>
+	<div class="uk-grid uk-container-center uk-text-small" data-uk-grid-margin>
+        <div class="uk-width-large-1-2 uk-width-small-1-2 uk-text-center">
+            <?php beans_breadcrumb(); ?>
+        </div>
+
+        <div class="uk-width-large-1-2 uk-width-small-1-2 uk-text-center uk-clearfix">
+            <?php beans_post_title(); ?>
+        </div>
+    </div>
+	<?php
+
+}
+
+beans_replace_attribute( 'beans_breadcrumb', 'class', 'uk-text-muted', 'uk-text-small' );
+
+// Modify
+beans_add_attribute( 'beans_post_title', 'class', 'uk-text-muted uk-text-right uk-h6' );
+
+// Modify
+beans_add_attribute( 'beans_breadcrumb', 'class', 'uk-text-muted uk-text-left' );
+
+////////
+
+// Load document which is always needed at the bottom of template files.
+beans_load_document();
