@@ -7,9 +7,9 @@ beans_remove_action( 'beans_post_meta_categories' );
 beans_remove_action( 'beans_post_image' );
 
 // Trim the content.
-add_filter( 'the_content', 'mk_archive_post_excerpt' );
+add_filter( 'the_content', 'blue_archive_post_excerpt' );
 
-function mk_archive_post_excerpt( $content ) {
+function blue_archive_post_excerpt( $content ) {
 
     return wp_trim_words( $content, 155, '...' );
 

@@ -28,6 +28,8 @@ function mk_uikit_complete() {
 
 //////// Beans General ends here ////////
 
+load_child_theme_textdomain( 'tm-beans', get_stylesheet_directory() . '/languages/' );
+
 //////// Beans Site-wide Functionality starts here ////////
 
 // Disable comments on pages.
@@ -214,32 +216,6 @@ function blue_quote_widget_bar() {
     	</div>
 	</div>
     <?php
-
-}
-
-// New CTA area.
-beans_add_smart_action( 'beans_footer_before_markup', 'blue_cta_bar' );
-
-function blue_cta_bar() {
-
-	?>
-	<div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-
-            <div class="uk-vertical-align uk-text-center" style="background: url('https://mk-blue-jcmrs.c9users.io/wp-content/uploads/vestigingen.jpg') 50% 0 no-repeat; height: 450px;">
-                <div class="uk-vertical-align-middle uk-width-1-2">
-                    <h4>Sample Heading</h4>
-                    <p class="uk-text-large">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo.</p>
-                    <p>
-                        <a class="uk-button uk-button-primary uk-button-large" href="#">Button</a>
-                        <a class="uk-button uk-button-large" href="#">Button</a>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-	<?php
 
 }
 
