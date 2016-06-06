@@ -263,77 +263,9 @@ beans_add_attribute( 'beans_main', 'class', 'uk-padding-remove' );
 
 //////// Customisations end here ////////
 
-//////// Testing Tweaks start here ////////
 
-add_action( 'beans_body_append_markup', 'example_fancy_uikit_components' );
 
-function example_fancy_uikit_components() {
-
-    // Stop here if Beans is not in dev mode.
-    if ( !get_option( 'beans_dev_mode', false ) ) {
-        return;
-    }
-
-    global $_beans_uikit_enqueued_items;
-
-    ?>
-    <a href="#example-uikit-list" class="uk-button-text uk-float-right uk-margin-right uk-margin-bottom" data-uk-offcanvas=""><i class="uk-icon-cog uk-margin-small-right"></i>UIkit components</a>
-    <div id="example-uikit-list" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}">
-                <li class="uk-nav-header">UIkit components</li>
-                <li class="uk-parent uk-active">
-                    <a href="#">Core</a>
-                    <ul class="uk-nav-sub">
-                        <?php foreach ( $_beans_uikit_enqueued_items['components']['core'] as $core ) : ?>
-                            <li><a href="#"><?php echo $core; ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </li>
-                <li class="uk-parent uk-active">
-                    <a href="#">Add-ons</a>
-                    <ul class="uk-nav-sub">
-                        <?php foreach ( $_beans_uikit_enqueued_items['components']['add-ons'] as $addons ) : ?>
-                            <li><a href="#"><?php echo $addons; ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <?php
-
-}
-
-//////// Testing Tweaks end here ////////
-
-//////// WP Tweaks start here ////////
-
-// Clean the Head.
-remove_action(‘wp_head’, ‘rsd_link’); 
-remove_action(‘wp_head’, ‘wp_generator’); 
-remove_action(‘wp_head’, ‘feed_links’, 2); 
-remove_action(‘wp_head’, ‘feed_links_extra’, 3); 
-remove_action(‘wp_head’, ‘index_rel_link’);
-remove_action(‘wp_head’, ‘wlwmanifest_link’); 
-remove_action(‘wp_head’, ‘start_post_rel_link’, 10, 0); 
-remove_action(‘wp_head’, ‘parent_post_rel_link’, 10, 0);
-remove_action(‘wp_head’, ‘adjacent_posts_rel_link’, 10, 0);
-remove_action(‘wp_head’, ‘adjacent_posts_rel_link_wp_head’, 10, 0 );
-remove_action(‘wp_head’, ‘wp_shortlink_wp_head’, 10, 0 );
-// remove_action(‘wp_head’, ‘rel_canonical’, 10, 0 );
-
-// Disable any and all mention of emoji's.
-// Source code credit: http://ottopress.com/
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );   
-remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );     
-remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-
-// Yoast JSON-LD
-add_filter('disable_wpseo_json_ld_search', '__return_true'); 
-
-//////// WP Tweaks end here ////////
+// Little helpers
+require_once( get_stylesheet_directory() . '/assets/cleaner.php' );
+require_once( get_stylesheet_directory() . '/assets/testing.php' );
+// require_once( get_stylesheet_directory() . '/inc/alert.php' );
