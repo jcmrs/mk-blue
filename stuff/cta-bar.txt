@@ -23,3 +23,39 @@ function blue_stellar_places_bar() {
 	<?php
 
 }
+
+add_action( 'beans_site_before_markup', 'blue_stellar_places_bar' );
+
+function blue_stellar_places_bar() {
+
+	?>
+	<div class="uk-grid uk-height-viewport" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+
+            <div class="uk-vertical-align uk-text-center" style="background: url('https://mk-blue-jcmrs.c9users.io/wp-content/uploads/vestigingen.jpg') 50% 50% no-repeat; height: 100vh;">
+                <div class="uk-vertical-align-middle uk-width-1-2">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-1">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-1">
+                                    <?php beans_site_branding(); ?>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <h4>Stellar Places Map</h4>
+                                    <p class="uk-text-bold">As div background, no info windows, just add feature buttons on top.</p>
+                                    <p>
+                                        <a href="#mk-top" class="uk-button uk-button-primary uk-button-large" data-uk-smooth-scroll>Get Route</a>
+                                        <a class="uk-button uk-button-large" href="#">Get Contact</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+	<?php
+
+}
