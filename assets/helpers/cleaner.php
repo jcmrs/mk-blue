@@ -1,6 +1,6 @@
 <?php
 
-// Clean up head
+// Clean up wp_head
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
 remove_action('wp_head', 'feed_links', 2);
@@ -24,7 +24,8 @@ remove_filter('the_excerpt', 'wptexturize');
 remove_filter('comment_text', 'wptexturize');
 remove_filter('the_title', 'wptexturize');
 
-// Unregister all unnecessary widgets
+// Unregister unnecessary widgets
+// Source code credit: http://ottopress.com/
 add_action('widgets_init', 'mk_unregister_default_widgets', 11);
 function mk_unregister_default_widgets() {
   unregister_widget('WP_Widget_Pages');
@@ -35,7 +36,7 @@ function mk_unregister_default_widgets() {
   unregister_widget('WP_Widget_Recent_Comments');
   unregister_widget('WP_Widget_RSS');
   unregister_widget('WP_Widget_Tag_Cloud');
-  unregister_widget('Akismet_Widget');
+  // unregister_widget('Akismet_Widget');
 }
 
 // Enable svg support
@@ -71,7 +72,7 @@ remove_filter('the_excerpt', 'wptexturize');
 remove_filter('comment_text', 'wptexturize');
 remove_filter('the_title', 'wptexturize');
 
-// Disable emojis in the editor
+// Disable emoji drama in the editor
 
 function disable_emojicons_tinymce( $plugins ) {
   if ( is_array( $plugins ) ) {

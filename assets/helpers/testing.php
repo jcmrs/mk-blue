@@ -1,6 +1,6 @@
 <?php
 
-//////// Testing Tweaks start here ////////
+//////// UIKit Components Tester ////////
 
 add_action( 'beans_body_append_markup', 'mk_fancy_uikit_components' );
 

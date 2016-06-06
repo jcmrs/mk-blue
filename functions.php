@@ -266,6 +266,6 @@ beans_add_attribute( 'beans_main', 'class', 'uk-padding-remove' );
 
 
 // Little helpers
-require_once( get_stylesheet_directory() . '/assets/cleaner.php' );
-require_once( get_stylesheet_directory() . '/assets/testing.php' );
-// require_once( get_stylesheet_directory() . '/inc/alert.php' );
+require_once( get_stylesheet_directory() . '/assets/helpers/cleaner.php' );
+require_once( get_stylesheet_directory() . '/assets/helpers/testing.php' );
+// require_once( get_stylesheet_directory() . '/assets/helpers/alert.php' );
