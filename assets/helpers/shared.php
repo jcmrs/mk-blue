@@ -12,6 +12,9 @@ function blue_remove_page_comments() {
   
 }
 
+// Remove Site Title Tag
+beans_remove_action( 'beans_site_title_tag' );
+
 // Remove Active from Breadcrumbs
 beans_add_attribute( 'beans_breadcrumb_item[_active]', 'class', 'uk-hidden' );
 

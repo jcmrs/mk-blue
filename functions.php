@@ -66,34 +66,7 @@ function mk_post_image_small_args( $args ) {
 
 //////// New Areas start here ////////
 
-// Add Header Bar
-beans_remove_action( 'beans_site_title_tag' );
 
-add_action( 'beans_header_before_markup', 'blue_header_bar' );
-
-function blue_header_bar() {
-
-	?>
-	<div class="blue-header-bar uk-block-muted">
-		
-		<div class="uk-container uk-container-center uk-text-justify">
-			
-			<div class="uk-grid uk-contrast" data-uk-grid-match data-uk-margin>
-    			<div class="uk-width-large-1-2 uk-width-medium-1-1 uk-text-left uk-text-middle uk-text-center-medium uk-text-center-small uk-hidden-medium uk-hidden-small">
-    			    <?php beans_site_title_tag(); ?>
-    			</div>
-    			<div class="uk-width-large-1-2 uk-width-medium-1-1 uk-text-right uk-text-middle uk-text-center-medium uk-text-center-small">
-    				<a href="#"><i class="uk-icon-map-marker"></i> Locaties</a> <a href="mailto:info@mail.net"><i class="uk-icon-envelope"></i> info @ mail.net</a> <a href="tel:1-562-867-5309"><i class="uk-icon-phone-square"></i> 562-867-5309</a>
-    			</div>
-			</div>
-			
-			
-		</div>
-		
-	</div>
-	<?php
-
-}
 
 // Removed to shared.php
 // Add Content Bar.
@@ -149,8 +122,6 @@ function blue_header_bar() {
 // beans_add_attribute( 'beans_post_title', 'class', 'uk-text-muted uk-text-right uk-h6' );
 
 //////// Customisations end here ////////
-
-
 
 // Little helpers
 require_once( get_stylesheet_directory() . '/assets/helpers/cleaner.php' );
