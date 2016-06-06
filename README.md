@@ -25,7 +25,7 @@ Beans community is growing rapidly and a lot of people are asking how they can c
 If you are a Beans superstar and you want to contribute to Beans core, here are a few house rules:
 
 * Commits must start with a **capital** letter and end with a **dot** (unless it ends with a version number).
-* Commits must start with one of the following key words **Added**, **Fixed**, **Updated**, **Improved**, **Modified** or **Removed**.
+* Commits must start with one of the following key words **Tweaking**, **Added**, **Fixed**, **Updated**, **Improved**, **Modified** or **Removed**.
 * Commits must be split into specific tasks and kept small so that other developers can easily see what it's about.
 * Code format must be strictly similar to the rest of the theme framework.
 
