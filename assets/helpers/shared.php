@@ -137,10 +137,118 @@ beans_modify_action_callback( 'beans_footer_content', 'beans_child_footer_conten
 function beans_child_footer_content() {
 
     ?>
-    <div class="uk-grid uk-container-center" data-uk-grid-margin>
-        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-text-center uk-text-middle uk-text-center-medium uk-text-center-small">
-    		<a href="#"><i class="uk-icon-sitemap"></i> Privacy</a> <a href="#"><i class="uk-icon-map-marker"></i> Locaties</a> <a href="mailto:info@mail.net"><i class="uk-icon-envelope"></i> info @ mail.net</a> <a href="tel:1-562-867-5309"><i class="uk-icon-phone-square"></i> 562-867-5309</a> <a href="#"><i class="uk-icon-sitemap"></i> Sitemap</a>
-		</div>
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin>
+
+            <div class="uk-width-large-1-3">
+                <div class="uk-panel uk-panel-box">
+                    <h1><span class="uk-text-primary">Blue</span>Beans</h1>
+                    <p>Lorem ipsum reversus ab viral inferno, nam rick grimes malum cerebro quaeritis.</p>
+                    <div class="uk-grid" data-uk-margin="{cls:'uk-margin-top'}">
+
+                        <div class="uk-width-2-10">
+                            <i class="uk-icon-map-marker"></i>
+                        </div>
+
+                        <div class="uk-width-8-10">
+                            Street 42<br>
+                            0182 AA City
+                        </div>
+
+                        <div class="uk-width-2-10">
+                            <i class="uk-icon-phone"></i>
+                        </div>
+
+                        <div class="uk-width-8-10">
+                            +31 (0)00 000 0000
+                        </div>
+
+                        <div class="uk-width-2-10">
+                            <i class="uk-icon-envelope-o"></i>
+                        </div>
+
+                        <div class="uk-width-8-10">
+                            <a href="mailto:email@company.com">email@company.com</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-large-2-3">
+                <div class="uk-grid" data-uk-grid-match>
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">Shopping guide</p>
+                            <ul class="uk-list">
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Shipping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">Company</p>
+                            <ul class="uk-list uk-panel-space">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                                <li><a href="#">Work with Us</a></li>
+                                <li><a href="#">Franchise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">Help</p>
+                            <ul class="uk-list">
+                                <li><a href="#">Fashion Finder</a></li>
+                                <li><a href="#">Track Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">General</p>
+                            <ul class="uk-list uk-panel-space">
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy & Cookies</a></li>
+                                <li><a href="#">Store directory</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">Follow Us</p>
+                            <ul class="uk-list">
+                                <li data-uk-margin>
+                                    <a href="#" class="uk-icon-button uk-icon-twitter"></a>
+                                    <a href="#" class="uk-icon-button uk-icon-facebook"></a>
+                                    <a href="#" class="uk-icon-button uk-icon-google-plus"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-space uk-text-center-small">
+                            <p class="bh-text-uppercase">Payment</p>
+                            <ul class="uk-list uk-margin-remove">
+                                <li>
+                                    <a href="#"><i class="uk-icon-cc-mastercard uk-text-large"></i></a>
+                                    <a href="#"><i class="uk-icon-cc-visa uk-text-large"></i></a>
+                                    <a href="#"><i class="uk-icon-cc-amex uk-text-large"></i></a>
+                                    <a href="#"><i class="uk-icon-cc-paypal uk-text-large"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <?php
 }
