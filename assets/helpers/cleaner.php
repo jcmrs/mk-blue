@@ -82,12 +82,6 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
-// Remove comments on pages
-add_action( 'init', 'mk_remove_page_comments' );
-function mk_remove_page_comments() {
-  remove_post_type_support( 'page', 'comments' );
-}
-
 // Remove type attribute from scripts tag
 add_filter( 'script_loader_tag', 'mk_remove_script_type_attribute' );
 function mk_remove_script_type_attribute( $script ) {
