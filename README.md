@@ -1,6 +1,6 @@
 #Blue Child Theme for Beans WordPress theme framework
 
-A learning curve in progress of getting tackled!
+A learning curve in process of getting tackled!
 
 # Beans WordPress theme framework
 [Beans](http://www.getbeans.io/) is an incredibly powerful and flexible WordPress theme, yet light weight and unbelievably fast. Whether you are a pro or a beginner, you will enjoy the simplicity of it. The magic is under the hood!

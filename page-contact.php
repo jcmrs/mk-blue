@@ -6,7 +6,7 @@ add_action( 'beans_uikit_enqueue_scripts', 'group_view_enqueue_uikit_assets' );
 
 function group_view_enqueue_uikit_assets() {
 
-	beans_uikit_enqueue_components( array( 'contrast', 'thumbnail', 'scrollspy', 'smooth-scroll' ), 'core' );
+	beans_uikit_enqueue_components( array( 'contrast', 'thumbnail', 'scrollspy', 'modal', 'smooth-scroll' ), 'core' );
 	beans_uikit_enqueue_components( array( 'flext', 'sticky', 'offcanvas' ), 'add-ons' );
 
 }
@@ -57,6 +57,7 @@ function blue_splash_bar() {
                         <p>
                             <a href="#beans-header" class="uk-button uk-button-large" data-uk-scrollspy data-uk-smooth-scroll="{offset: 5}">Get Route</a>
                             <a class="uk-button uk-button-large" href="#">Get Contact</a>
+                            <a class="uk-button" href="#modal-blank" data-uk-modal>Blank (Fullscreen)</a>
                         </p>
                     </div>
                 </div>
@@ -68,8 +69,25 @@ function blue_splash_bar() {
 
 }
 
+add_action( 'beans_body_after_markup', 'fullscreen-modal' );
 
-
+function fullscreen_modal() {
+    
+    ?>
+    <div id="modal-blank" class="uk-modal">
+        <div class="uk-modal-dialog uk-modal-dialog-blank">
+            <button class="uk-modal-close uk-close" type="button"></button>
+            <div class="uk-grid uk-flex-middle" data-uk-grid-margin>
+                <div class="uk-width-medium-1-2 uk-height-viewport uk-cover-background" style="background-image: url('http://unsplash.it/600/600');"></div>
+                <div class="uk-width-medium-1-2">
+                    <h1>Modal Blank</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+    
+    }
 
 
 beans_add_attribute( "blue_stellar_places_bar", "data-uk-parallax", "{ bg: '-50,50', opacity: '1,0.5' }" );
