@@ -1,0 +1,40 @@
+<div class="tm-hero uk-block-large uk-viewport">
+<div class="uk-container uk-container-center uk-text-center">
+<h1>The most innovative WordPress theme</h1>
+<ul class="uk-list uk-hidden-small">
+<li><i class="uk-icon-check-circle uk-icon-small"></i>Powerful</li>
+<li><i class="uk-icon-check-circle uk-icon-small"></i>Flexible</li>
+<li><i class="uk-icon-check-circle uk-icon-small"></i>Extendable</li>
+<li><i class="uk-icon-check-circle uk-icon-small"></i>Lightweight</li>
+<li><i class="uk-icon-check-circle uk-icon-small"></i>Crazy fast</li>
+</ul>
+<p class="uk-article-lead ">Beans is an incredibly powerful and flexible WordPress theme, yet light weight and unbelievably fast. The magic is under the hood!</p> <p class="uk-margin-bottom-remove"><a title="Download Beans WordPress theme framework" class="uk-button uk-button-primary uk-button-large uk-margin-small-top" href="http://www.getbeans.io/download-beans/?no_cache=1">Download for free</a></p>
+<p class="tm-hero-sub-actions"><a class="uk-text-small uk-text-contrast uk-margin-right" title="Beans WordPress theme framework on GitHub" href="https://github.com/Getbeans/Beans" target="_blank"><i class="uk-icon-github uk-icon-small uk-margin-small-right"></i>On GitHub</a><a class="uk-text-small uk-text-contrast" title="Beans WordPress theme framework Changelog" href="http://www.getbeans.io/changelog/" target="_blank"><i class="uk-icon-history uk-icon-small uk-margin-small-right"></i>Changelog</a></p>
+</div>
+
+<div class="tm-accreditations">
+<div class="uk-container uk-container-center tm-medium-container uk-text-center">
+<div class="uk-grid uk-grid-width-1-4">
+<a href="http://www.sitepoint.com/introducing-beans-streamlined-wordpress-framework/" title="Read Beans Theme Framework article on SitePoint" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/Sitepoint-Article-85116c4.png" srcset="http://www.getbeans.io/uploads/beans/images/Sitepoint-Article-85116c4.png, http://www.getbeans.io/uploads/Sitepoint-Article.png 2x" alt="Read Beans Theme Framework article on SitePoint"/></a><a href="http://wplift.com/beans-wordpress-theme-framework" title="Read Beans Theme Framework article on WPLift" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/WPLift-Article-68b5603.png" srcset="http://www.getbeans.io/uploads/beans/images/WPLift-Article-68b5603.png, http://www.getbeans.io/uploads/WPLift-Article.png 2x" alt="Read Beans Theme Framework article on WPLift"/></a><a href="http://www.wpmayor.com/beans-easy-free-lightweight-wordpress-theme-framework/" title="Read Beans Theme Framework article on WP Mayor" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/WP-Mayor-Article-06777bd.png" srcset="http://www.getbeans.io/uploads/beans/images/WP-Mayor-Article-06777bd.png, http://www.getbeans.io/uploads/WP-Mayor-Article.png 2x" alt="Read Beans Theme Framework article on WP Mayor"/></a><a href="http://www.cssauthor.com/wordpress-frameworks/#Theme" title="Beans Theme Framework featured on CSS Author" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/CSS-Author-e47f8bc.png" srcset="http://www.getbeans.io/uploads/beans/images/CSS-Author-e47f8bc.png, http://www.getbeans.io/uploads/CSS-Author.png 2x" alt="Beans Theme Framework featured on CSS Author"/></a> </div>
+</div>
+
+<div class="splash-bar uk-block-large uk-height-viewport uk-flex uk-flex-center uk-flex-middle">
+        <div class="uk-container uk-container-center uk-text-center uk-responsive-width uk-responsive-height">
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-1-1 uk-text-center uk-text-contrast uk-align-center">
+                    <?php beans_site_branding(); ?>
+                </div>
+                <div class="uk-width-1-1 uk-align-center uk-text-contrast">
+                    <p class="uk-article-lead "><?php beans_site_title_tag(); ?></p>
+                    <p class="uk-margin-bottom-remove"><a title="Download Beans WordPress theme framework" class="uk-button uk-button-primary uk-button-large uk-margin-small-top" href="http://www.getbeans.io/download-beans/?no_cache=1">Download for free</a></p>
+                    <p class="tm-hero-sub-actions"><a class="uk-text-small uk-text-contrast uk-margin-right" title="Beans WordPress theme framework on GitHub" href="https://github.com/Getbeans/Beans" target="_blank"><i class="uk-icon-github uk-icon-small uk-margin-small-right"></i>On GitHub</a><a class="uk-text-small uk-text-contrast" title="Beans WordPress theme framework Changelog" href="http://www.getbeans.io/changelog/" target="_blank"><i class="uk-icon-history uk-icon-small uk-margin-small-right"></i>Changelog</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tm-accreditations">
+        <div class="uk-container uk-container-center tm-medium-container uk-text-center">
+        <div class="uk-grid uk-grid-width-1-4">
+        <a href="http://www.sitepoint.com/introducing-beans-streamlined-wordpress-framework/" title="Read Beans Theme Framework article on SitePoint" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/Sitepoint-Article-85116c4.png" srcset="http://www.getbeans.io/uploads/beans/images/Sitepoint-Article-85116c4.png, http://www.getbeans.io/uploads/Sitepoint-Article.png 2x" alt="Read Beans Theme Framework article on SitePoint"/></a><a href="http://wplift.com/beans-wordpress-theme-framework" title="Read Beans Theme Framework article on WPLift" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/WPLift-Article-68b5603.png" srcset="http://www.getbeans.io/uploads/beans/images/WPLift-Article-68b5603.png, http://www.getbeans.io/uploads/WPLift-Article.png 2x" alt="Read Beans Theme Framework article on WPLift"/></a><a href="http://www.wpmayor.com/beans-easy-free-lightweight-wordpress-theme-framework/" title="Read Beans Theme Framework article on WP Mayor" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/WP-Mayor-Article-06777bd.png" srcset="http://www.getbeans.io/uploads/beans/images/WP-Mayor-Article-06777bd.png, http://www.getbeans.io/uploads/WP-Mayor-Article.png 2x" alt="Read Beans Theme Framework article on WP Mayor"/></a><a href="http://www.cssauthor.com/wordpress-frameworks/#Theme" title="Beans Theme Framework featured on CSS Author" target="_blank"><img src="http://www.getbeans.io/uploads/beans/images/CSS-Author-e47f8bc.png" srcset="http://www.getbeans.io/uploads/beans/images/CSS-Author-e47f8bc.png, http://www.getbeans.io/uploads/CSS-Author.png 2x" alt="Beans Theme Framework featured on CSS Author"/></a> </div>
+    </div>

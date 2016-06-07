@@ -23,6 +23,8 @@ function group_view_enqueue_uikit_assets() {
 
 // beans_remove_action( 'beans_primary_menu' );
 
+beans_remove_action( 'beans_site_title_tag' );
+
 // Introduce different logo's per breakpoint
 beans_modify_action_callback( 'beans_site_branding', 'mk_logo' );
 
@@ -52,7 +54,7 @@ function blue_splash_bar() {
                         <?php beans_site_branding(); ?>
                     </div>
                     <div class="uk-width-1-1 uk-text-center uk-contrast">
-                        <h1>Title</h1>
+                        <h1><?php beans_site_title_tag(); ?></h1>
                         <p class="uk-text-bold">As div background, no info windows, just add feature buttons on top.</p>
                         <p>
                             <a href="#beans-header" class="uk-button uk-button-large" data-uk-scrollspy data-uk-smooth-scroll="{offset: 5}">Get Route</a>

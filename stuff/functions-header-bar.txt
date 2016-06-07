@@ -19,3 +19,7 @@ function blue_header_bar() {
 	</div>
 	<?php
 }
+
+
+// <?php beans_site_branding(); ?> //
+// <?php beans_site_title_tag(); ?> //
