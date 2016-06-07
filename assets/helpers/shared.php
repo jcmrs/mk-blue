@@ -12,6 +12,9 @@ function blue_remove_page_comments() {
   
 }
 
+// Add sticky to Navbar
+// beans_add_attribute( 'beans_header', 'data-uk-sticky', 'top:0' );
+
 // Remove Site Title Tag
 beans_remove_action( 'beans_site_title_tag' );
 
